@@ -220,6 +220,8 @@
     width: 100%;
     height: 30px;
     background-color: #FFF;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .mydrp .header td {
@@ -274,7 +276,7 @@
 .mydrp .monthcell,
 .mydrp .yearcell {
     border-collapse: collapse;
-    color: #003366;
+    color: #415465;
     line-height: 1.1;
 }
 
@@ -287,7 +289,6 @@
 }
 
 .mydrp .weekdaytitle {
-    background-color: #DDD;
     font-size: 11px;
     font-weight: normal;
     vertical-align: middle;
@@ -344,7 +345,7 @@
 }
 
 .mydrp .range {
-    background-color: #D9F2E6;
+    background-color: #bff0dd;
 }
 
 .mydrp .markcurrday,
@@ -362,8 +363,15 @@
 .mydrp .selectedmonth .monthvalue,
 .mydrp .selectedyear .yearvalue {
     border: none;
-    background-color: #8EBFFF;
-    border-radius: 2px;
+    background-color: #8ce8c0;
+    border-left: 4px solid #8ce8c0;
+    margin-left: -4px;
+    border-right: 4px solid #8ce8c0;
+    margin-right: -4px;
+    border-top: 8px solid #8ce8c0;
+    margin-top: -8px;
+    border-bottom: 9px solid #8ce8c0;
+    margin-bottom: -9px;
 }
 
 .mydrp .headerbtncell {
@@ -461,7 +469,7 @@
 .mydrp .icon-mydrpright,
 .mydrp .icon-mydrpup,
 .mydrp .icon-mydrpdown {
-    color: #222;
+    color: #489ad4;
     font-size: 20px;
 }
 
