@@ -5,7 +5,7 @@ declare var require:any;
 const sampleDrpInlineTemplate: string = require('./sample-date-range-picker-inline.html');
 
 @Component({
-    selector: 'sample-date-range-picker-inline',
+    selector: 'sample-date-range-picker-inline-TorresCodex',
     template: sampleDrpInlineTemplate
 })
 

@@ -57,9 +57,10 @@
     margin-left: -1px;
     position: absolute;
     padding: 0;
-    border: 1px solid #CCC;
     z-index: 100;
     animation: selectorfadein 0.06s;
+    width: 340px;
+    box-shadow: 3px 3px 15px grey;
 }
 
 .mydrp .selector:focus {
@@ -81,17 +82,10 @@
     border: 1px solid #CCC;
     margin-top: 12px;
     padding: 0;
+    margin-left: 130px;
 }
 
-.mydrp .selectorarrow:after,
-.mydrp .selectorarrow:before {
-    bottom: 100%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-}
+
 
 .mydrp .selectorarrow:after {
     border-color: rgba(250, 250, 250, 0);
@@ -213,7 +207,7 @@
 .mydrp .btnclear,
 .mydrp .headerclearbtn,
 .mydrp .headerokbtn {
-    background: #FFF;
+    background: rgba(255, 255, 255, 0);
 }
 
 .mydrp .header {
@@ -407,7 +401,7 @@
 .mydrp,
 .mydrp .headerclearbtn,
 .mydrp .headerokbtn {
-    border: 1px solid #CCC;
+    border: 0px solid #CCC;
 }
 
 .mydrp .btnpicker,
@@ -442,7 +436,7 @@
 .mydrp .btnpicker:focus,
 .mydrp .headerclearbtn:focus,
 .mydrp .headerokbtn:focus {
-    background: #ADD8E6;
+    cursor: pointer;
 }
 
 .mydrp .headerbtn:focus,
@@ -492,7 +486,8 @@
 .mydrp .btnclearenabled:hover,
 .mydrp .headerclearbtnenabled:hover,
 .mydrp .headerokbtnenabled:hover {
-    background-color: #E6E6E6;
+    
+    cursor: pointer;
 }
 
 .mydrp .daycell:hover,
@@ -567,11 +562,16 @@
     height: 45px;
 }
 
-.mydrp .maflex .flax {
+.mydrp .maflex .calendars-container .flax {
     display: flex;
     height: 45px;
     padding-right: 20px;
-    padding-left: 10px;
+    padding-left: 20px;
+}
+
+.calendars-container:hover{
+    cursor: pointer;
+    background: rgb(245, 245, 245);
 }
 
 .mydrp .maflex .btnpicker {
@@ -580,4 +580,6 @@
 
 .mydrp .maflex p {
     padding-top: 15px;
+    color: #6f6f6f;
+    padding-right: 30px;
 }

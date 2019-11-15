@@ -6,7 +6,7 @@ declare var require:any;
 const amSampleTpl: string = require('./sample-date-range-picker-access-modifier.html');
 
 @Component({
-    selector: 'sample-date-range-picker-access-modifier',
+    selector: 'sample-date-range-picker-access-modifier-TorresCodex',
     template: amSampleTpl
 })
 
