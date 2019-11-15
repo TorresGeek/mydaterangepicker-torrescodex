@@ -16,7 +16,7 @@ export class SampleDateRangePickerNormal implements OnInit {
         firstDayOfWeek: 'mo',
         sunHighlight: true,
         height: '34px',
-        width: '250px',
+        width: '400px',
         inline: false,
         alignSelectorRight: false,
         indicateInvalidDateRange: true,

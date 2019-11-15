@@ -561,3 +561,23 @@
 .mydrp .icon-mydrpremove:before {
     content: "\e806";
 }
+
+.mydrp .maflex {
+    display: flex;
+    height: 45px;
+}
+
+.mydrp .maflex .flax {
+    display: flex;
+    height: 45px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.mydrp .maflex .btnpicker {
+    display: flex;
+}
+
+.mydrp .maflex p {
+    padding-top: 15px;
+}
