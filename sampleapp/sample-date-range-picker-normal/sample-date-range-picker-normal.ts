@@ -13,30 +13,30 @@ export class SampleDateRangePickerNormal implements OnInit {
 
     private myDateRangePickerOptionsNormal: IMyDrpOptions = {
         dateFormat: 'dd mmm yyyy',
-        firstDayOfWeek: 'mo',
-        sunHighlight: true,
-        height: '34px',
-        width: '400px',
-        inline: false,
-        alignSelectorRight: false,
+        firstDayOfWeek: 'su',
+        //sunHighlight: true,
+        //height: '34px',
+        //width: '400px',
+        //inline: false,
+        //alignSelectorRight: false,
         indicateInvalidDateRange: true,
         minYear: 1970,
         maxYear: 2200,
-        componentDisabled: false,
-        showClearDateRangeBtn: true,
-        showSelectorArrow: true,
-        disableHeaderButtons: true,
-        showWeekNumbers: false,
-        showClearBtn: true,
-        showApplyBtn: true,
+        //componentDisabled: false,
+        //showClearDateRangeBtn: true,
+        //showSelectorArrow: true,
+        //disableHeaderButtons: true,
+        //showWeekNumbers: false,
+        //showClearBtn: true,
+        //showApplyBtn: true,
         showSelectDateText: true,
         openSelectorOnInputClick: false,
-        monthSelector: true,
-        yearSelector: true,
-        disableDateRanges: [
-            {beginDate: {year: 2016, month: 10, day: 5}, endDate: {year: 2016, month: 10, day: 7}},
-            {beginDate: {year: 2016, month: 10, day: 10}, endDate: {year: 2016, month: 10, day: 12}}
-        ]
+        //monthSelector: true,
+        //yearSelector: true,
+        //disableDateRanges: [
+        //    {beginDate: {year: 2016, month: 10, day: 5}, endDate: {year: 2016, month: 10, day: 7}},
+        //    {beginDate: {year: 2016, month: 10, day: 10}, endDate: {year: 2016, month: 10, day: 12}}
+        //]
     };
 
     //selectedDateRangeNormal:string = '04 Nov 2016 - 26 Nov 2016';
