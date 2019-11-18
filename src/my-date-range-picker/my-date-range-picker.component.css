@@ -60,9 +60,9 @@
     z-index: 100;
     animation: selectorfadein 0.06s;
     width: 340px;
-    box-shadow: 3px 3px 15px grey;
+    box-shadow: 3px 3px 4px #8080804f;
 }
-
+ 
 .mydrp .selector:focus {
     border: 1px solid #ADD8E6;
     outline: none;
@@ -217,7 +217,7 @@
     width: 100%;
     height: 30px;
     background-color: #FFF;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     padding-top: 10px;
 }
 
