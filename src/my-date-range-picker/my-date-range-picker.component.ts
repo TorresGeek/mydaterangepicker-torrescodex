@@ -21,7 +21,7 @@ enum KeyCode {enter = 13, esc = 27, space = 32}
 enum MonthId {prev = 1, curr = 2, next = 3}
 
 @Component({
-    selector: "my-date-range-picker",
+    selector: "my-date-range-picker-torrescodex",
     exportAs: "mydaterangepicker",
     styles: [myDrpStyles],
     template: myDrpTemplate,
