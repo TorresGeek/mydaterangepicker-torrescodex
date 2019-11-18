@@ -1,5 +1,10 @@
 # mydaterangepicker
 
+## Do not use this package for development
+## Do not use this package for development
+## Do not use this package for development
+## Do not use this package for development
+## Do not use this package for development
 
 ## New version of the component is here: [repository](https://github.com/kekeh/angular-mydatepicker) and [online demo](https://kekeh.github.io/angular-mydatepicker/) 
 
