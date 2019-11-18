@@ -557,12 +557,13 @@
     content: "\e806";
 }
 
-.mydrp .maflex {
+.mydrp .myflex {
     display: flex;
     height: 45px;
+    white-space: nowrap;
 }
 
-.mydrp .maflex .calendars-container .flax {
+.mydrp .myflex .calendars-container .flax {
     display: flex;
     height: 45px;
     padding-right: 20px;
@@ -574,11 +575,11 @@
     background: rgb(245, 245, 245);
 }
 
-.mydrp .maflex .btnpicker {
+.mydrp .myflex .btnpicker {
     display: flex;
 }
 
-.mydrp .maflex p {
+.mydrp .myflex p {
     padding-top: 15px;
     color: #6f6f6f;
     padding-right: 30px;
