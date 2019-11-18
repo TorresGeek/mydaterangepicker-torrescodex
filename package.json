@@ -1,13 +1,13 @@
 {
   "name": "mydaterangepicker-torrescodex",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Angular date range picker MOD",
   "keywords": [
     "Angular2",
     "Angular4",
     "date range picker"
   ],
-  "author": "kekeh",
+  "author": "kekeh => AlfredoTorres",
   "license": "MIT",
   "repository": {
     "type": "git",
