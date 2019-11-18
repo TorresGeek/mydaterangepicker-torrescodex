@@ -81,7 +81,10 @@
     background: #FFF;
     border: 1px solid #CCC;
     margin-top: 12px;
-    padding: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     margin-left: 130px;
 }
 
@@ -334,7 +337,7 @@
 }
 
 .mydrp .currmonth {
-    background-color: #F6F6F6;
+    background-color: rgb(255, 255, 255);
     font-weight: normal;
 }
 
