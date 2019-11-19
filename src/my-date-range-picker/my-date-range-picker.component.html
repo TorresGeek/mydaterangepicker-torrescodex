@@ -3,13 +3,39 @@
         <div (click)="openBtnClicked()" class="calendars-container" style="display: flex;">
             <div class="flax" style="border-right: 1px solid #d7d7d7;">
                 <button type="button" class="btnpicker" [attr.aria-label]="opts.ariaLabelOpenCalendar" [ngClass]="{'btnpickerenabled': !opts.componentDisabled, 'btnpickerdisabled': opts.componentDisabled}" [disabled]="opts.componentDisabled">
-                    <img src="../my-date-range-picker/images/Calendar.png" alt="calendar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <g id="Group_9" data-name="Group 9" transform="translate(-725.835 -366.199)">
+                          <path id="Path_35" data-name="Path 35" d="M742.336,367.885H739.9v-1.123a.563.563,0,0,0-1.127,0v1.123H735.4v-1.123a.563.563,0,0,0-1.126,0v1.123H730.9v-1.123a.561.561,0,1,0-1.123,0v1.123h-2.439a1.5,1.5,0,0,0-1.5,1.5V382.7a1.5,1.5,0,0,0,1.5,1.5h15a1.5,1.5,0,0,0,1.5-1.5V369.385a1.5,1.5,0,0,0-1.5-1.5Zm.373,14.812a.374.374,0,0,1-.373.376h-15a.374.374,0,0,1-.373-.376V369.385a.374.374,0,0,1,.373-.374h2.439v1.127a.561.561,0,0,0,1.123,0v-1.127h3.375v1.127a.563.563,0,0,0,1.126,0v-1.127h3.372v1.127a.563.563,0,0,0,1.127,0v-1.127h2.439a.374.374,0,0,1,.373.374Zm0,0" fill="#46c195"/>
+                          <rect id="Rectangle_9" data-name="Rectangle 9" width="2.249" height="1.686" transform="translate(729.774 372.95)" fill="#46c195"/>
+                          <rect id="Rectangle_10" data-name="Rectangle 10" width="2.249" height="1.686" transform="translate(729.774 375.762)" fill="#46c195"/>
+                          <rect id="Rectangle_11" data-name="Rectangle 11" width="2.249" height="1.686" transform="translate(729.774 378.574)" fill="#46c195"/>
+                          <rect id="Rectangle_12" data-name="Rectangle 12" width="2.249" height="1.686" transform="translate(733.709 378.574)" fill="#46c195"/>
+                          <rect id="Rectangle_13" data-name="Rectangle 13" width="2.249" height="1.686" transform="translate(733.709 375.762)" fill="#46c195"/>
+                          <rect id="Rectangle_14" data-name="Rectangle 14" width="2.249" height="1.686" transform="translate(733.709 372.95)" fill="#46c195"/>
+                          <rect id="Rectangle_15" data-name="Rectangle 15" width="2.249" height="1.686" transform="translate(737.648 378.574)" fill="#46c195"/>
+                          <rect id="Rectangle_16" data-name="Rectangle 16" width="2.249" height="1.686" transform="translate(737.648 375.762)" fill="#46c195"/>
+                          <rect id="Rectangle_17" data-name="Rectangle 17" width="2.249" height="1.686" transform="translate(737.648 372.95)" fill="#46c195"/>
+                        </g>
+                      </svg>
                 </button>
                 <p>{{beginDate.day}} {{beginDate.month}} {{beginDate.year}}</p>
             </div>
             <div class="flax">
                 <button type="button" class="btnpicker" [attr.aria-label]="opts.ariaLabelOpenCalendar" [ngClass]="{'btnpickerenabled': !opts.componentDisabled, 'btnpickerdisabled': opts.componentDisabled}" [disabled]="opts.componentDisabled">
-                    <img src="../my-date-range-picker/images/Calendar.png" alt="calendar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                        <g id="Group_9" data-name="Group 9" transform="translate(-725.835 -366.199)">
+                          <path id="Path_35" data-name="Path 35" d="M742.336,367.885H739.9v-1.123a.563.563,0,0,0-1.127,0v1.123H735.4v-1.123a.563.563,0,0,0-1.126,0v1.123H730.9v-1.123a.561.561,0,1,0-1.123,0v1.123h-2.439a1.5,1.5,0,0,0-1.5,1.5V382.7a1.5,1.5,0,0,0,1.5,1.5h15a1.5,1.5,0,0,0,1.5-1.5V369.385a1.5,1.5,0,0,0-1.5-1.5Zm.373,14.812a.374.374,0,0,1-.373.376h-15a.374.374,0,0,1-.373-.376V369.385a.374.374,0,0,1,.373-.374h2.439v1.127a.561.561,0,0,0,1.123,0v-1.127h3.375v1.127a.563.563,0,0,0,1.126,0v-1.127h3.372v1.127a.563.563,0,0,0,1.127,0v-1.127h2.439a.374.374,0,0,1,.373.374Zm0,0" fill="#46c195"/>
+                          <rect id="Rectangle_9" data-name="Rectangle 9" width="2.249" height="1.686" transform="translate(729.774 372.95)" fill="#46c195"/>
+                          <rect id="Rectangle_10" data-name="Rectangle 10" width="2.249" height="1.686" transform="translate(729.774 375.762)" fill="#46c195"/>
+                          <rect id="Rectangle_11" data-name="Rectangle 11" width="2.249" height="1.686" transform="translate(729.774 378.574)" fill="#46c195"/>
+                          <rect id="Rectangle_12" data-name="Rectangle 12" width="2.249" height="1.686" transform="translate(733.709 378.574)" fill="#46c195"/>
+                          <rect id="Rectangle_13" data-name="Rectangle 13" width="2.249" height="1.686" transform="translate(733.709 375.762)" fill="#46c195"/>
+                          <rect id="Rectangle_14" data-name="Rectangle 14" width="2.249" height="1.686" transform="translate(733.709 372.95)" fill="#46c195"/>
+                          <rect id="Rectangle_15" data-name="Rectangle 15" width="2.249" height="1.686" transform="translate(737.648 378.574)" fill="#46c195"/>
+                          <rect id="Rectangle_16" data-name="Rectangle 16" width="2.249" height="1.686" transform="translate(737.648 375.762)" fill="#46c195"/>
+                          <rect id="Rectangle_17" data-name="Rectangle 17" width="2.249" height="1.686" transform="translate(737.648 372.95)" fill="#46c195"/>
+                        </g>
+                      </svg>
                 </button>
                 <p>{{endDate.day}} {{endDate.month}} {{endDate.year}}</p>
             </div>
