@@ -3,13 +3,13 @@
         <div (click)="openBtnClicked()" class="calendars-container" style="display: flex;">
             <div class="flax" style="border-right: 1px solid #d7d7d7;">
                 <button type="button" class="btnpicker" [attr.aria-label]="opts.ariaLabelOpenCalendar" [ngClass]="{'btnpickerenabled': !opts.componentDisabled, 'btnpickerdisabled': opts.componentDisabled}" [disabled]="opts.componentDisabled">
-                    <span class="mydrpicon icon-mydrpcalendar"></span>
+                    <img src="../my-date-range-picker/images/Calendar.png" alt="calendar">
                 </button>
                 <p>{{beginDate.day}} {{beginDate.month}} {{beginDate.year}}</p>
             </div>
             <div class="flax">
                 <button type="button" class="btnpicker" [attr.aria-label]="opts.ariaLabelOpenCalendar" [ngClass]="{'btnpickerenabled': !opts.componentDisabled, 'btnpickerdisabled': opts.componentDisabled}" [disabled]="opts.componentDisabled">
-                    <span class="mydrpicon icon-mydrpcalendar"></span>
+                    <img src="../my-date-range-picker/images/Calendar.png" alt="calendar">
                 </button>
                 <p>{{endDate.day}} {{endDate.month}} {{endDate.year}}</p>
             </div>
