@@ -1,4 +1,4 @@
-<div class="mydrp" [ngStyle]="{'border': opts.inline ? 'none' : null}">    
+<div clickOutside (clickOutside)="checkEndDate()" class="mydrp" [ngStyle]="{'border': opts.inline ? 'none' : null}">    
     <div class="myflex">
         <div (click)="openBtnClicked()" class="calendars-container" [ngStyle]="modalOpen && {'background': 'rgb(245, 245, 245)'}" style="display: flex;">
             <div class="flax" style="border-right: 1px solid #d7d7d7;">
@@ -18,7 +18,7 @@
                         </g>
                       </svg>
                 </button>
-                <p>{{beginDate.day}} {{beginDate.month}} {{beginDate.year}}</p>
+                <p style="text-transform: capitalize">{{beginDate.day}} {{opts.monthLabels[beginDate.month]}} {{beginDate.year}} </p>
             </div>
             <div class="flax">
                 <button type="button" class="btnpicker" [attr.aria-label]="opts.ariaLabelOpenCalendar" [ngClass]="{'btnpickerenabled': !opts.componentDisabled, 'btnpickerdisabled': opts.componentDisabled}" [disabled]="opts.componentDisabled">
@@ -37,11 +37,11 @@
                         </g>
                       </svg>
                 </button>
-                <p>{{endDate.day}} {{endDate.month}} {{endDate.year}}</p>
+                <p style="text-transform: capitalize;">{{endDate.day}} {{opts.monthLabels[endDate.month]}} {{endDate.year}}</p>
             </div>
         </div>
     </div>  
-    <div class="selector" #selectorEl *ngIf="showSelector||opts.inline" [ngStyle]="{'height' : opts.selectorHeight}" [mydrpfocus]="opts.inline?'0':'1'" [ngClass]="{'inline': opts.inline, 'alignselectorright': opts.alignSelectorRight, 'selectorarrow': opts.showSelectorArrow&&!opts.inline, 'selectorarrowleft': opts.showSelectorArrow&&!opts.alignSelectorRight&&!opts.inline, 'selectorarrowright': opts.showSelectorArrow&&opts.alignSelectorRight&&!opts.inline}" (keyup)="onCloseSelector($event)" tabindex="0">
+    <div  class="selector" #selectorEl *ngIf="showSelector||opts.inline" [ngStyle]="{'height' : opts.selectorHeight}" [mydrpfocus]="opts.inline?'0':'1'" [ngClass]="{'inline': opts.inline, 'alignselectorright': opts.alignSelectorRight, 'selectorarrow': opts.showSelectorArrow&&!opts.inline, 'selectorarrowleft': opts.showSelectorArrow&&!opts.alignSelectorRight&&!opts.inline, 'selectorarrowright': opts.showSelectorArrow&&opts.alignSelectorRight&&!opts.inline}" (keyup)="onCloseSelector($event)" tabindex="0">
         <div class="titlearea" *ngIf="false"> <!--opts.showSelectDateText-->
             <div class="titleareatxt">{{titleAreaText!==''?titleAreaText:opts.selectBeginDateTxt}}</div>
         </div>
@@ -53,7 +53,7 @@
                     </div>
                 </td>
                 <td>
-                    <p>{{visibleMonth.monthTxt}} - {{visibleMonth.year}}</p>
+                    <p>{{visibleMonth.monthTxt.toUpperCase()}} - {{visibleMonth.year}}</p>
                 </td>
                 <td>
                     <div style="float:right">
@@ -63,7 +63,7 @@
             </tr>
         </table>
         <table class="caltable" *ngIf="!selectMonth&&!selectYear" [ngStyle]="{'height': opts.showSelectDateText?'calc(100% - 54px)':'calc(100% - 30px)'}">
-            <thead><tr><th class="weekdaytitle weekdaytitleweeknbr" *ngIf="opts.showWeekNumbers&&opts.firstDayOfWeek==='mo'">#</th><th class="weekdaytitle" scope="col" *ngFor="let d of weekDays">{{d}}</th></tr></thead>
+            <thead><tr><th class="weekdaytitle weekdaytitleweeknbr" *ngIf="opts.showWeekNumbers&&opts.firstDayOfWeek==='mo'">#</th><th class="weekdaytitle" scope="col" *ngFor="let d of weekDays">{{d.toUpperCase()}}</th></tr></thead>
             <tbody>
                 <tr *ngFor="let w of dates">
                     <td class="daycell daycellweeknbr" *ngIf="opts.showWeekNumbers&&opts.firstDayOfWeek==='mo'">{{w.weekNbr}}</td>

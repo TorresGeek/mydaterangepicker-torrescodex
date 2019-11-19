@@ -143,6 +143,14 @@ export class MyDateRangePicker implements OnChanges, OnDestroy, ControlValueAcce
         this.selectYear = false;
     }
 
+    checkEndDate(): void {
+        console.log("EndDate");
+        if(this.endDate.day == 0 || this.endDate.month == 0 || this.endDate.year == 0){
+            console.log("WATA");
+            this.endDate = this.beginDate;
+        }
+    }
+
     onSelectMonthClicked(event: any): void {
         event.stopPropagation();
         this.selectMonth = !this.selectMonth;
@@ -406,6 +414,7 @@ export class MyDateRangePicker implements OnChanges, OnDestroy, ControlValueAcce
             this.modalOpen = true;
         }else{
             this.modalOpen = false;
+            this.checkEndDate();
         }
     }
 
