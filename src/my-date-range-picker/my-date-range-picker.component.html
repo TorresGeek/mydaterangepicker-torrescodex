@@ -1,6 +1,6 @@
 <div class="mydrp" [ngStyle]="{'border': opts.inline ? 'none' : null}">    
     <div class="myflex">
-        <div (click)="openBtnClicked()" class="calendars-container" style="display: flex;">
+        <div (click)="openBtnClicked()" class="calendars-container" [ngStyle]="modalOpen && {'background': 'rgb(245, 245, 245)'}" style="display: flex;">
             <div class="flax" style="border-right: 1px solid #d7d7d7;">
                 <button type="button" class="btnpicker" [attr.aria-label]="opts.ariaLabelOpenCalendar" [ngClass]="{'btnpickerenabled': !opts.componentDisabled, 'btnpickerdisabled': opts.componentDisabled}" [disabled]="opts.componentDisabled">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">

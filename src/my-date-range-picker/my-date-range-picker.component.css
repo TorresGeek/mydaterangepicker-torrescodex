@@ -576,6 +576,10 @@
     background: rgb(245, 245, 245);
 }
 
+.calendars-containerselected{
+    background: rgb(245, 245, 245);
+}
+
 .mydrp .myflex .btnpicker {
     display: flex;
 }

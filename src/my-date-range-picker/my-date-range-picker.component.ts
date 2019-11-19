@@ -40,6 +40,7 @@ export class MyDateRangePicker implements OnChanges, OnDestroy, ControlValueAcce
     @Output() inputFocusBlur: EventEmitter<IMyInputFocusBlur> = new EventEmitter<IMyInputFocusBlur>();
     @Output() dateSelected: EventEmitter<IMyDateSelected> = new EventEmitter<IMyDateSelected>();
     @ViewChild("selectorEl") selectorEl: any;
+    modalOpen: boolean = false;
 
     onChangeCb: (_: any) => void = () => { };
     onTouchedCb: () => void = () => { };
@@ -129,6 +130,7 @@ export class MyDateRangePicker implements OnChanges, OnDestroy, ControlValueAcce
         this.globalListener = renderer.listenGlobal("document", "click", (event: any) => {
             if (this.showSelector && event.target && this.elem.nativeElement !== event.target && !this.elem.nativeElement.contains(event.target)) {
                 this.showSelector = false;
+                this.modalOpen = false;
             }
             if (this.opts.monthSelector || this.opts.yearSelector) {
                 this.resetMonthYearSelect();
@@ -267,6 +269,7 @@ export class MyDateRangePicker implements OnChanges, OnDestroy, ControlValueAcce
     onCloseSelector(event: any): void {
         if (event.keyCode === KeyCode.esc && this.showSelector && !this.opts.inline) {
             this.showSelector = false;
+            this.modalOpen = false;
         }
     }
 
@@ -400,6 +403,9 @@ export class MyDateRangePicker implements OnChanges, OnDestroy, ControlValueAcce
         this.cdr.detectChanges();
         if (this.showSelector) {
             this.setVisibleMonth();
+            this.modalOpen = true;
+        }else{
+            this.modalOpen = false;
         }
     }
 
@@ -558,6 +564,7 @@ export class MyDateRangePicker implements OnChanges, OnDestroy, ControlValueAcce
         let dateRangeModel: IMyDateRangeModel = this.getDateRangeModel(this.beginDate, this.endDate);
         this.selectionDayTxt = this.formatDate(this.beginDate) + " - " + this.formatDate(this.endDate);
         this.showSelector = false;
+        this.modalOpen = false;
         this.dateRangeChanged.emit(dateRangeModel);
         this.inputFieldChanged.emit({value: this.selectionDayTxt, dateRangeFormat: this.dateRangeFormat, valid: true});
         this.onChangeCb(dateRangeModel);
