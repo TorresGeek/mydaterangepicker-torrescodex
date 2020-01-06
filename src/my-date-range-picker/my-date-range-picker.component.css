@@ -581,7 +581,7 @@
 }
 
 .mydrp .myflex .btnpicker {
-    display: flex;
+    display: inline;
 }
 
 .mydrp .myflex p {
@@ -589,4 +589,50 @@
     color: #6f6f6f;
     padding-right: 30px;
     padding-left: 10px;
+}
+
+@media (max-width: 768px){
+    .mydrp .myflex .calendars-container .flax {
+        display: flex;
+        height: 45px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .mydrp .myflex p {
+        padding-top: 15px;
+        color: #6f6f6f;
+        padding-right: 10px;
+        padding-left: 2px;
+    }
+}
+
+@media (max-width: 480px){
+    .mydrp .myflex .calendars-container .flax {
+        display: flex;
+        height: 45px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .mydrp .myflex p {
+        padding-top: 15px;
+        color: #6f6f6f;
+        padding-right: 5px;
+        padding-left: 2px;
+    }
+
+    .mydrp .myflex .calendars-container .flax:nth-child(2n) svg {
+        display: none;
+    }
+
+    .mydrp .myflex .calendars-container .flax:nth-child(2n) button {
+        width: 2px;
+    }
+}
+
+@media (max-width: 370px){
+    .mydrp .selectorarrow {
+        width: 95vw;
+    }
 }
